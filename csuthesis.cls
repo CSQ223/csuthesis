@@ -90,6 +90,9 @@ citecolor=myblue,
 {}{\fail}
 \makeatother
 
+\RequirePackage{scrextend}
+\deffootnote[1.5em]{1.5em}{1em}{\thefootnotemark\space}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Redefine the caption of equation/table/figure
