@@ -1,0 +1,51 @@
+
+\documentclass[coverwidth=210mm, coverheight=297mm, spinewidth=5mm, 12pt]{bookcover}
+
+\usepackage{ctex}
+
+\newbookcovercomponenttype{center rotate}{
+	\parbox[t][\partheight][c]{\partwidth}{
+		\begin{center}
+			\rotatebox[origin=c]{90}{#1}
+\end{center}}}
+
+\usepackage{multirow}	%跨多行
+\usepackage{multicol}   %跨多栏
+\usepackage{awesomebox}
+
+\usepackage{fontspec}
+%\usepackage{mathpazo,tgpagella}
+\usepackage{mathptmx}
+\usepackage[T1]{fontenc}
+
+\begin{document}
+	\begin{bookcover}
+		\bookcovercomponent{normal}{front}{
+            \begin{center}
+                \vspace{5cm}
+				\parbox{\textwidth-6cm}{\centering\heiti{\zihao{-3}硕士毕业论文}}\\[2cm]
+                \parbox{\textwidth-6cm}{\centering\heiti{\zihao{-2}基于低碳视角的基于低碳视角的基于低碳视角的基于低碳视角的}}\\[1cm]
+                \parbox{\textwidth-6cm}{\centering{\zihao{-2}Based on Based on Based on Based on Based on Based on Based on Based on Based on Based on Based on }}\\[5cm]
+
+                \begin{tabular}{m{4cm}<{\raggedright} m{3cm}<{\centering} m{3cm}<{\centering}}
+                    \zihao{3}{学科专业：}&\multicolumn{2}{c}{\zihao{3}{物流工程}}\\[1.5em]
+                    \zihao{3}{专业领域：}&\multicolumn{2}{c}{\zihao{3}{物流系统优化}}\\[1.5em]
+                    \zihao{3}{作者姓名：}&\multicolumn{2}{c}{\zihao{3}{徐巍}}\\[1.5em]
+                    \zihao{3}{指导教师：}&\multicolumn{2}{c}{\zihao{3}{张得志教授}}\\
+                \end{tabular}
+
+                \vspace{3cm}
+                \zihao{-3}{中南大学\\2021年5月}
+            \end{center}}
+		
+%		\bookcovercomponent{color}{spine}{color=red}
+		
+		\bookcovercomponent{center}{spine}{
+			\heiti{\zihao{4}{硕士毕业论文}
+			
+			\vspace{20em}
+			
+			\zihao{4}{中南大学}}
+		}
+	\end{bookcover}
+\end{document}
