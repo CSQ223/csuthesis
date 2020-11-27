@@ -178,7 +178,7 @@ citecolor=myblue,
 
 \pagestyle{fancy}
 \fancyhf{}
-\fancyhead[LE,RO]{\zihao{-5} 硕士毕业论文}
+\fancyhead[LE,RO]{\zihao{-5} \ThesisType}
 \fancyhead[RE]{\zihao{-5}\rightmark}
 \fancyhead[LO]{\zihao{-5}\leftmark}
 \fancyfoot[C]{\zihao{-5}\thepage}
