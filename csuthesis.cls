@@ -92,6 +92,10 @@ citecolor=myblue,
 
 \RequirePackage{scrextend}
 \deffootnote[1.5em]{1.5em}{1em}{\thefootnotemark\space}
+% Reset the footnote numbering by page/section/chapter/etc.
+\makeatletter
+\@addtoreset{footnote}{page}
+\makeatother
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
